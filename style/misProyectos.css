@@ -1,0 +1,170 @@
+/* NAVBAR */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header { 
+    padding-top: 1rem;
+    text-align: center;
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 3px 2px rgb(0, 110, 255);
+}
+
+.navbar-nav li {
+    transition: background-color 200ms ease, border-radius 200ms ease;
+}
+
+.navbar-nav li:hover {
+    background-color: black;
+    border-radius: 0.5rem;
+}
+
+.navbar-nav .nav-link {
+    transition: color 200ms ease;
+}
+
+.navbar-nav li:hover .nav-link {
+    color: whitesmoke;
+}
+
+/* MIS PROYECTOS NAVBAR */
+
+.custom-navbar li {
+    transition: background-color 200ms ease, border-radius 200ms ease;
+    font-size: 1rem;
+    padding: 0.2rem;
+    margin: 3rem;
+}
+
+.custom-navbar li:hover {
+    background-color: black;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px 3px 2px rgb(0, 110, 255);
+}
+
+.custom-navbar .custom-nav-link {
+    transition: color 200ms ease;
+}
+
+.custom-navbar li:hover .custom-nav-link {
+    color: rgb(0, 110, 255);
+}
+
+/* CARTAS DE PROYECTOS */
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap; /* CLAVE para responsive */
+}
+
+.flex-items {
+    margin: 1rem;
+}
+
+/* tamaño uniforme de cartas */
+.card {
+    width: 25rem;
+    height: 100%;
+}
+
+/* botones */
+
+.card-link {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.card-link:hover {
+    color: rgb(0, 110, 255);
+}
+
+/* BOTON VOLVER */
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    background-color: black;
+    border-radius: 0.5rem;
+    width: 100px;
+    text-align: center;
+}
+
+.button a:hover {
+    color: rgb(0, 110, 255);
+}
+
+.next-time {
+    text-align: center;
+    margin: 3rem;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+/* TABLET */
+@media (max-width: 992px) {
+
+    .custom-navbar li {
+        margin: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .card {
+        width: 20rem;
+    }
+
+}
+
+/* CELULAR */
+@media (max-width: 768px) {
+
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .custom-navbar li {
+        margin: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+}
+
+/* CELULAR PEQUEÑO */
+@media (max-width: 480px) {
+
+    header {
+        font-size: 0.9rem;
+    }
+
+    .card {
+        width: 95%;
+    }
+
+    .button a {
+        width: 120px;
+        font-size: 0.9rem;
+    }
+
+}

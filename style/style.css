@@ -1,0 +1,289 @@
+/*NAVBAR*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header { 
+    padding-top: 1rem;
+    text-align: center;
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 3px 2px rgb(0, 110, 255);
+}
+
+.navbar-nav li {
+    transition: background-color 200ms ease, border-radius 200ms ease;
+}
+
+.navbar-nav li:hover {
+    background-color: black;
+    border-radius: 0.5rem;
+}
+
+.navbar-nav .nav-link {
+    transition: color 200ms ease;
+}
+
+.navbar-nav li:hover .nav-link {
+    color: whitesmoke;
+}
+
+
+/*SOBRE MI*/
+
+.foto-perfil {
+    object-fit: cover;
+    height: 100%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+
+/*EXPERIENCIA*/
+  
+.card {
+    margin-top: 2rem;
+}
+
+
+/* STACK TECNOLOGICO */
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; 
+  gap: 2rem; 
+  flex-wrap: wrap; 
+}
+
+.flex-items {
+  width: 280px; 
+  min-height: 320px;
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.stackFrontEnd,
+.stackBackEnd,
+.stackBDD,
+.stackHerramientas {
+  width: 100%;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* FrontEnd */
+.stackFrontEnd {
+  background-color: rgb(115, 235, 115);
+  border: 0.3rem solid green;
+}
+
+/* BackEnd */
+.stackBackEnd {
+  background-color: rgb(240, 184, 81);
+  border: 0.3rem solid orange;
+}
+
+/* Base de Datos */
+.stackBDD {
+  background-color: rgb(147, 205, 255);
+  border: 0.3rem solid blue;
+}
+
+/* Herramientas */
+.stackHerramientas {
+  background-color: rgb(255, 255, 109);
+  border: 0.3rem solid yellow;
+}
+
+/* Listas */
+
+.frontend,
+.backend,
+.BDD,
+.herramientas {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Iconos */
+
+.frontend li {
+  background-image: url('../image/simbolo-frontend.png');
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 25px;
+}
+
+.backend li {
+  background-image: url('../image/simbolo-backend.png');
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 25px;
+}
+
+.BDD li {
+  background-image: url('../image/simbolo-basededatos.png');
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 25px;
+}
+
+.herramientas li {
+  background-image: url('../image/simbolo-herramientas.png');
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 25px;
+}
+
+
+/*CONTACTO*/
+
+.panel-contacto {
+  background-color: whitesmoke;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 400px;
+  margin: 2rem auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.795);
+  color: black;
+}
+
+.panel-contacto h3 {
+  text-align: center;
+}
+
+.panel-contacto ul {
+  padding: 0;
+}
+
+.panel-contacto ul li {
+  list-style: none;
+  padding-left: 30px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 18px;
+  margin: 0.3rem;
+}
+
+.whatsapp {
+  background-image: url('../image/simbolos-contacto/whatsapp-simbolo.png');
+}
+
+.email {
+  background-image: url('../image/simbolos-contacto/gmail-simbolo.png');
+}
+
+.linkedin {
+  background-image: url('../image/simbolos-contacto/linkedin-simbolo.png');
+}
+
+.github {
+  background-image: url('../image/simbolos-contacto/github-simbolo.png');
+}
+
+.panel-contacto ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.panel-contacto ul li a:hover {
+  color: rgb(0, 110, 255);
+}
+
+
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+
+/* TABLETS */
+
+@media (max-width: 1024px) {
+
+  .flex-container {
+    gap: 1.5rem;
+  }
+
+  .flex-items {
+    width: 240px;
+  }
+
+  .stackFrontEnd,
+  .stackBackEnd,
+  .stackBDD,
+  .stackHerramientas {
+    padding: 2rem;
+  }
+
+}
+
+
+/* CELULARES GRANDES */
+
+@media (max-width: 768px) {
+
+  header {
+    padding: 1rem;
+  }
+
+  .foto-perfil {
+    border-radius: 0.5rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex-items {
+    width: 90%;
+  }
+
+  .stackFrontEnd,
+  .stackBackEnd,
+  .stackBDD,
+  .stackHerramientas {
+    padding: 1.8rem;
+  }
+
+  .panel-contacto {
+    width: 90%;
+  }
+
+}
+
+
+/* CELULARES CHICOS */
+
+@media (max-width: 480px) {
+
+  .stackFrontEnd,
+  .stackBackEnd,
+  .stackBDD,
+  .stackHerramientas {
+    padding: 1.5rem;
+  }
+
+  .panel-contacto {
+    padding: 1.5rem;
+  }
+
+  .panel-contacto ul li {
+    padding-left: 25px;
+    background-size: 16px;
+  }
+
+}
